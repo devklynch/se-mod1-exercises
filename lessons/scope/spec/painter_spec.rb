@@ -6,7 +6,7 @@ describe Painter do
     the_painters_name = "Bob Ross"
     painter = Painter.new(the_painters_name)
 
-    expect(painter).to be_a(Painter)
+    expect(painter).to be_a Painter
   end
 
   xit 'test_it_has_a_name1' do
