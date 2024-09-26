@@ -10,7 +10,7 @@ RSpec.describe Lion do
 
   it 'has a name' do
     lionel = Lion.new({name: "Lionel", sound: "roar"})
-
+    #require "pry" ; binding.pry
     expect(lionel.name).to eq("Lionel")
   end
 

@@ -2,7 +2,7 @@ require './lib/ceo'
 require './lib/manager'
 require './lib/intern'
 
-ali = Ceo.new(15, 20)
+ali = Ceo.new(15, 20, "Ali", 1)
 ben = Manager.new(10)
 chris = Intern.new(5)
 

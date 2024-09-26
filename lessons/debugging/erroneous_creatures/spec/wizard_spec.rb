@@ -15,7 +15,7 @@ RSpec.describe Wizard do
 
   it "is bearded by default" do
     wizard = Wizard.new("Ben")
-
+#require "pry"; binding.pry
     expect(wizard.bearded?).to eq(true)
   end
 

@@ -5,4 +5,6 @@ class MagicalPet
     @name = name
     @pet_owner_id = pet_owner_id
   end
+
+
 end

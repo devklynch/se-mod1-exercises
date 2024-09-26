@@ -4,10 +4,10 @@ RSpec.describe Ceo do
 
   describe "setup" do
     it "exists" do
-      ceo = Ceo.new(15,20)
+      ceo = Ceo.new(15,20, "Ali",1)
     end
     it "has base_salary and bonus attributes" do
-      ceo = Ceo.new(15,20)
+      ceo = Ceo.new(15,20,"Ali",1)
       expect(ceo.base_salary).to eq(15)
       expect(ceo.bonus).to eq(20)
     end

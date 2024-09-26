@@ -1,6 +1,7 @@
 require 'pry'
 require 'rspec'
 require './lib/attendee'
+require './lib/event_manager'
 
 describe Attendee do
   before :each do
@@ -36,5 +37,12 @@ describe Attendee do
     expect(@person_2.zipcode).to eq "07306"
     expect(@person_3.zipcode).to eq "00000"
     expect(@person_4.zipcode).to eq "21230"
+  end
+
+  it 'can import files' do
+    factory=EventManager.new
+    attendees =factory.create_attendees("./data/event_attendees.csv")
+
+    expect(attendees).to be_all(Attendee)
   end
 end

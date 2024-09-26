@@ -1,8 +1,9 @@
-require './lib/painter'
 require './lib/paint'
+require './lib/painter'
+
 
 describe Painter do
-  it 'test_it_exists' do
+  xit 'test_it_exists' do
     the_painters_name = "Bob Ross"
     painter = Painter.new(the_painters_name)
 
@@ -13,24 +14,28 @@ describe Painter do
     painter = Painter.new(the_painters_name)
 
     expect(painter.name).to eq("Bob Ross")
+    #the_painters_name doesn't exist 
   end
 
   xit 'test_it_has_a_name2' do
     painter = Painter.new("Bob Ross")
 
     expect(@name).to eq("Bob Ross")
+    #@name is not calling a specific instance
   end
 
   xit 'test_it_has_a_name3' do
     bob_ross = Painter.new("Bob Ross")
 
     expect(painter.name).to eq("Bob Ross")
+    #painter is not an instance here
   end
 
   xit 'test_it_can_give_greeting' do
     painter = Painter.new("Bob Ross")
 
     expect(greeting).to eq("Hello, I'm Bob Ross")
+    #greeting only exists within Painter class
   end
 
   xit 'test_it_can_give_greeting_again' do

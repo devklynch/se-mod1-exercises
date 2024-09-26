@@ -10,7 +10,7 @@ RSpec.describe Narwhal do
 
   it 'has a name' do
     nancy = Narwhal.new({cute: true, weight: 500, name: "Nancy"})
-
+    #require "pry" ; binding.pry
     expect(nancy.name).to eq("Nancy")
   end
 
